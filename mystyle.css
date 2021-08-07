@@ -1,0 +1,255 @@
+html {
+    height: 100%;
+}
+
+body {
+    max-width: 800px;
+    min-height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-color: #657AD3;
+    font: normal normal normal 16px/19px Gill Sans MT;
+}
+
+.container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-column, .right-column {
+    float:left;
+    height: 484px;
+}
+
+#login .left-column, #login .right-column {
+    height:322px;
+}
+
+#forgot .left-column, #forgot .right-column {
+    height:241px;
+}
+
+.left-column {
+    width: 40%;
+    background-color: transparent;
+}
+
+.right-column {
+    width: 60%;
+    background-color: #FFFFFF ;
+    position: relative;
+}
+
+
+.left-column-container {
+    display: block;
+    height: 424px;
+    background-color: red;
+    margin-top: 30px;
+    background: transparent url('img/kalnas.jpeg') 0% 0% no-repeat padding-box;
+    background-size: cover;
+    padding-left: 40px;
+    position:relative;
+}
+
+
+
+#login .left-column-container {
+    height: 262px;
+}
+
+#forgot .left-column-container {
+    height: 181px;
+}
+
+
+.right-column-container {
+    padding-left: 60px;
+    padding-top: 46px;
+    padding-right: 60px;
+    padding-bottom: 46px;
+}
+
+
+h1 {
+    font: normal normal normal 32px/37px Gill Sans MT;
+    color: #FFFFFF;
+    margin: 0;
+    padding-top: 32px;
+}
+
+.left-column p, .left-column a {
+    display: inline-block;
+    font: normal normal normal 16px/19px Gill Sans MT;
+    color: #FFFFFF;
+    margin: 0; 
+}
+
+.right-column p {
+    display: inline-block;
+    font: normal normal normal 18px/21px Gill Sans MT;
+    color: #000000;
+    margin: 0;
+    padding-left: 14px ;
+}
+
+.right-column a {
+    display: inline-block;
+    font: normal normal normal 18px/21px Gill Sans MT;
+    color: #00008B;
+    padding-left: 24px ;
+    margin: 0; 
+}
+
+.links {
+    position: absolute;
+    bottom: 25px;
+}
+
+label {
+    display:block;
+    font: normal normal normal 13px/15px Gill Sans MT;
+    color: #000000;
+    padding-bottom:12px;
+}
+
+
+.input {
+    margin-bottom: 33px;
+}
+
+input {
+    display: block;
+    border: none;
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #808080;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #808080;
+}
+
+::-webkit-input-placeholder {
+    font: normal normal normal 18px/21px Gill Sans MT;
+    color: #A9A9A9;
+}
+
+.btn {
+    font: normal normal normal 18px/21px Gill Sans MT;
+    color: #FFFFFF;
+    background-color: #FFC0CB;
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right:40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    box-shadow: 0 4px 8px darkgray;
+}
+
+.submit {
+    border: none;
+    background-color: transparent;
+}
+
+.btn:hover {
+    cursor:pointer;
+    box-shadow: 0 4px 8px grey;
+}
+
+.close {
+    font: normal normal normal 30px/35px Gill Sans MT;
+    color: #000000;
+    position:absolute;
+    top: 14px;
+    right: 23px;
+}
+
+.close:hover {
+    color:#00008B;
+}
+
+@media screen and (max-width: 708px) {
+    #login .or {
+        display:none;
+    }
+}
+
+@media screen and (max-width: 664px) {
+    
+    
+    .left-column-container {
+        height: 100%;
+        padding-left: 20px;
+        margin-top: 0;
+    }
+
+    #login .left-column-container {
+        height: 100%;
+    } 
+
+    #forgot .left-column-container {
+        height: 100%;
+    } 
+
+    .right-column-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .right-column-bottom-action {
+        margin-top:50px;
+    }
+
+    .links {
+        bottom: 45px;
+    }
+
+    .or {
+        display:none !important;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .btn {
+        font-size: 17px;
+    }
+
+    .left-column, .right-column {
+        width:100%
+    }
+
+    .left-column {
+        height: auto;
+    }
+
+    #login .left-column {
+        height: auto;
+    }
+
+    #forgot .left-column {
+        height: auto;
+    }
+
+    .links {
+        display:none;
+    }
+
+    .left-column-container {
+        background: none;
+    }
+
+    h1 {
+        padding-bottom:20px;
+    }
+
+    .or {
+        display:inline-block !important;
+    }
+}
