@@ -28,7 +28,7 @@ class Skaiciuotuvas {
     private $veiksmas;
 
     function __construct($sk1, $sk2, $veiksmas){
-        $this->sk1 = floatval($sk1);
+        $this->sk1 = floatval($sk1);  //is input laukeliu ateina tekstas, floatval reikalingas tam, kad paverstu i realu skaiciu
         $this->sk2 = floatval($sk2);
         $this->veiksmas = $veiksmas;
         switch($this->veiksmas) {
